@@ -1,413 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Conoce Itagüí — Cultura, Historia y Turismo</title>
-  º
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conoce Itagüí | Inicio</title>
 
-  <!-- Bootstrap  -->
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Fonts: Roboto + attempts for America Captain / Super Joyful with fallbacks -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <!-- America Captain & Super Joyful may not be on Google Fonts; we set CSS classes to use them if available, otherwise fallbacks -->
-  <style>
-    /* Colores */
-    :root{
-      --orange: #ff8800;
-      --orange-dark: #ff6d00;
-      --lightblue: #d9eefc;
-      --dark: #0b0b0b;
-      --muted-gray: #6c757d;
-      --white: #ffffff;
-      --card-bg: #fbfbfb;
-    }
-
-    /* Basic */
-    html,body{height:100%;}
-    body{
-      color: var(--dark);
-      margin:0;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      scroll-behavior:smooth;
-    }
-
-    /* Branding fonts (use if installed locally) */
-
-    .font-superjoyful { font-family: "Super Joyful", "Pacifico", cursive; }
-
-    /* Navbar */
-    .navbar{
-      background: linear-gradient(90deg, rgba(11,11,11,0.95), rgba(0,0,0,0.85));
-      z-index: 1000;
-    }
-    .navbar .nav-link{ color: rgba(255,255,255,0.90); }
-    .navbar .nav-link:hover{ color: var(--orange); }
-
-    /* Hero */
-    .hero {
-      min-height: 88vh;
-      display:flex;
-      align-items:center;
-      position:relative;
-      color: #fff;
-      background:
-        linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
-        url("https://upload.wikimedia.org/wikipedia/commons/9/99/Itagui_Parque_Principal.jpg") center/cover no-repeat;
-    }
-    .hero .badge-cat{
-      background: rgba(255,255,255,0.12);
-      border: 1px solid rgba(255,255,255,0.12);
-      color: #fff;
-      padding: .35rem .6rem;
-      border-radius: 999px;
-      font-weight:600;
-    }
-    .hero h1{
-      font-size: clamp(2rem, 4vw, 3.4rem);
-      line-height:1.04;
-      letter-spacing:1px;
-    }
-    .hero p.lead{ font-size:1.05rem; opacity:0.95; }
-
-    /* Buttons */
-    .btn-cta{
-      background: linear-gradient(180deg, var(--orange), var(--orange-dark));
-      color: #fff;
-      border: none;
-      box-shadow: 0 6px 22px rgba(255,136,0,0.18);
-    }
-    .btn-ghost{
-      background: transparent;
-      color: #fff;
-      border: 1px solid rgba(255,255,255,0.18);
-    }
-
-    /* titulos */
-    .section-title{
-      font-family: 'America Captain', serif;
-      font-weight:700;
-      margin-bottom: .75rem;
-    }
-    .muted { color: var(--muted-gray); }
-
-    /* Cards and features */
-    .feature-card{ border-radius: 14px; background: var(--card-bg); border: none; }
-    .circle-ico{
-      width:64px;height:64px;border-radius:12px;
-      display:inline-flex;align-items:center;justify-content:center;
-      background: linear-gradient(180deg, var(--lightblue), #e6f3ff);
-      border: 1px solid rgba(0,123,255,0.08);
-      font-size:1.6rem;
-    }
-
-    /* Timeline history */
-    .timeline{
-      position:relative;
-      padding-left:30px;
-    }
-    .timeline:before{
-      content:"";
-      position:absolute;
-      left:12px;
-      top:0;
-      bottom:0;
-      width:4px;
-      background: linear-gradient(180deg, var(--orange), var(--orange-dark));
-      border-radius:4px;
-      opacity:0.15;
-    }
-    .timeline-item{
-      position:relative;
-      margin-bottom:2.2rem;
-      padding-left:30px;
-    }
-    .timeline-item:before{
-      content:"";
-      position:absolute;
-      left:-6px;
-      top:6px;
-      width:16px;height:16px;border-radius:50%;
-      background:var(--white);
-      border:4px solid var(--orange);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.06);
-    }
-
-    /* Social cards */
-    .bio-card{ border-radius:12px; overflow:hidden; }
-    .bio-card img{ width:100%; height:220px; object-fit:cover; }
-    .bio-card .card-body{ padding:1rem; }
-
-    /* Stats */
-    .stat{
-      text-align:center;
-      padding:1rem;
-      border-radius:12px;
-      background: linear-gradient(180deg, #fff, #fafafa);
-      box-shadow: 0 6px 18px rgba(15,15,15,0.03);
-    }
-    .stat h3{ font-size:1.6rem; margin-bottom:.25rem; color:var(--orange-dark); }
-    .stat p{ margin:0; color:var(--muted-gray); }
-
-    /* Footer */
-    footer{ background:#06121a; color:#cfeafc; padding:2.2rem 0; }
-
-    /* Responsive tweaks */
-    @media (max-width:768px){
-      .hero { min-height:70vh; padding:3rem 0; }
-      .bio-card img{ height:180px; }
-    }
-
-    /* small utility */
-    .tag { font-size:.85rem; padding:.25rem .6rem; border-radius:999px; background:#fff; color:var(--dark); font-weight:600; }
-  </style>
+  <link rel="stylesheet" href="paginafinal.css">
 </head>
 <body>
-
-  <!-- NAV -->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <!-- enlaces NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
     <div class="container">
-      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-        <span class="font-superjoyful" style="font-size:1.25rem; color:var(--orange)">&bull; Itagüí</span>
-        <small class="text-white-50 ms-1" style="font-size:.82rem">conoce tu ciudad</small>
-      </a>
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <a class="navbar-brand superjoyful" href="index.html">Itagüí</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
-
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto align-items-lg-center">
-          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#conoce">Conoce</a></li>
-          <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
-          <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#redes">Redes</a></li>
-          <li class="nav-item ms-2"><a class="btn btn-ghost" href="#contacto">Contáctanos</a></li>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link active">Inicio</a></li>
+          <li class="nav-item"><a href="conoce.html" class="nav-link">Conoce</a></li>
+          <li class="nav-item"><a href="historia.html" class="nav-link">Historia</a></li>
+          <li class="nav-item"><a href="redes.html" class="nav-link">Redes</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- HERO / INICIO -->
-  <header id="inicio" class="hero">
-    <div class="container text-center">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <span class="badge-cat">Explora Itagüí</span>
-          <h1 class="font-america mt-3">Itagüí Inspira: Cultura, Turismo y Oportunidades</h1>
-          <p class="lead mt-3">Te mostraremos diferentes lugares de Itagüí para visitar: parques, museos, iglesias, murales y más. Vivencias que conectan historia, arte y comunidad.</p>
-
-          <div class="mt-4 d-flex justify-content-center gap-2">
-            <a class="btn btn-cta btn-lg" href="#conoce">Expande tu conocimiento</a>
-            <a class="btn btn-ghost btn-lg" href="#historia">Nuestra historia</a>
-          </div>
-
-          <div class="mt-5 d-flex justify-content-center gap-3 flex-wrap">
-            <div class="tag">Cultura & Arte</div>
-            <div class="tag">Turismo Empresarial</div>
-            <div class="tag">Turismo Comercial</div>
-          </div>
-        </div>
-      </div>
+  <!-- HERO -->
+  <header class="hero d-flex align-items-center text-center text-white">
+    <div class="container">
+      <h1 class="america">Conoce Itagüí</h1>
+      <p class="lead">Descubre la cultura, historia y turismo de este municipio lleno de vida.</p>
+      <a href="conoce.html" class="btn btn-warning mt-3">Explora más</a>
     </div>
   </header>
 
-  <!-- CONOCE -->
-  <section id="conoce" class="py-5">
+  <!-- CATEGORÍAS -->
+  <section class="py-5 bg-light text-center">
     <div class="container">
-      <div class="row align-items-center g-4">
-        <div class="col-lg-6">
-          <h2 class="section-title">EXPANDE TU CONOCIMIENTO</h2>
-          <p class="muted">Ofrecemos información de interés sobre el municipio Itagüí - Colombia, invitando a conocer sus lugares más representativos, su historia, su gente y las experiencias únicas que hacen de este lugar un destino lleno de vida.</p>
-
-          <ul class="mt-3">
-            <li>Una herramienta llena de funciones para visitar nuevos lugares</li>
-            <li>Fácil de interactuar</li>
-            <li>Atención al cliente 24/7</li>
-            <li>Aplicación móvil para cualquier solución</li>
-            <li>Cuenta personal</li>
-          </ul>
-
-          <p class="mt-3"><strong>Toda la información en tus manos:</strong> Descubre los rincones más representativos del municipio: parques, museos, iglesias, murales, plazas y espacios naturales que reflejan la esencia y diversidad cultural de Itagüí. Desde su gastronomía tradicional hasta sus festividades locales, vive una experiencia completa que conecta historia, arte y comunidad.</p>
-
-          <div class="row g-2 mt-3">
-            <div class="col-6">
-              <div class="stat">
-                <h3>18.931+</h3>
-                <p>Unidades productivas registradas</p>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="stat">
-                <h3>10+</h3>
-                <p>Sitios de interés turístico</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-4">
-            <a href="#servicios" class="btn btn-cta">Ver todos los servicios</a>
-          </div>
-        </div>
-
-        <div class="col-lg-6">
-          <div class="row g-3">
-            <div class="col-md-6">
-              <div class="card feature-card p-3 h-100">
-                <div class="d-flex gap-3 align-items-start">
-                  <div class="circle-ico">🏛️</div>
-                  <div>
-                    <h5>Cultura y arte</h5>
-                    <p class="muted small">Museos, murales y escenas artísticas.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="card feature-card p-3 h-100">
-                <div class="d-flex gap-3 align-items-start">
-                  <div class="circle-ico">💼</div>
-                  <div>
-                    <h5>Turismo empresarial</h5>
-                    <p class="muted small">Rutas y servicios para negocios y eventos.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="card feature-card p-3 h-100">
-                <div class="d-flex gap-3 align-items-start">
-                  <div class="circle-ico">🛍️</div>
-                  <div>
-                    <h5>Turismo comercial</h5>
-                    <p class="muted small">Moda, comercio y la famosa Vía de la Moda.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="card feature-card p-3 h-100">
-                <div class="d-flex gap-3 align-items-start">
-                  <div class="circle-ico">📱</div>
-                  <div>
-                    <h5>App & soporte</h5>
-                    <p class="muted small">Atención y reservas desde tu móvil.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
+      <h2 class="mb-4">Categorías</h2>
+      <div class="row g-4">
+        <div class="col-md-4"><div class="card p-3"><h5>Cultura y Arte</h5></div></div>
+        <div class="col-md-4"><div class="card p-3"><h5>Turismo Empresarial</h5></div></div>
+        <div class="col-md-4"><div class="card p-3"><h5>Turismo Comercial</h5></div></div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICIOS -->
-  <section id="servicios" class="py-5 bg-light">
-    <div class="container">
-      <h2 class="section-title">TODOS LOS SERVICIOS QUE NECESITAS EN UN SOLO LUGAR</h2>
-      <p class="muted">Hoteles · Transporte · Restaurantes · Comercio · Arte</p>
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center p-3">
+    <p>© <span id="year"></span> Conoce Itagüí</p>
+  </footer>
 
-      <div class="row mt-4 g-3">
-        <div class="col-md-4">
-          <div class="card p-3 h-100">
-            <h5>Hoteles</h5>
-            <p class="muted small">Reservas y recomendaciones en las zonas centrales y cercanas a la Vía de la Moda.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card p-3 h-100">
-            <h5>Transporte</h5>
-            <p class="muted small">Rutas y conexiones con Medellín y municipios cercanos.</p>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="card p-3 h-100">
-            <h5>Restaurantes</h5>
-            <p class="muted small">Gastronomía local, platos tradicionales y propuestas modernas.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+  <!-- Bootstrap JS + Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
 
-  <!-- HISTORIA -->
-  <section id="historia" class="py-5">
-    <div class="container">
-      <h2 class="section-title">Conoce tu historia</h2>
-      <p class="muted">Historia del Municipio de Itagüí, Colombia</p>
-
-      <div class="row mt-4">
-        <div class="col-lg-8">
-          <div class="timeline">
-            <!-- Orígenes -->
-            <div class="timeline-item">
-              <h5>Orígenes y época precolombina</h5>
-              <p class="muted">Antes de la llegada de los españoles, el territorio de Itagüí estuvo habitado por comunidades indígenas que formaban parte del pueblo Aburrá, quienes dejaron huellas visibles de su presencia a través de petroglifos y vestigios cerámicos encontrados en el barrio El Rosario y otros sectores del municipio. Estas comunidades se destacaban por conocimientos en agricultura y cerámica. Los asentamientos datan de más de 2.000 años de antigüedad.</p>
-            </div>
-
-            <!-- Fundación colonial -->
-            <div class="timeline-item">
-              <h5>Fundación colonial y vida parroquial (siglo XVIII)</h5>
-              <p class="muted">Durante la colonia, Itagüí formaba parte de la jurisdicción de Envigado. La capilla dedicada a Nuestra Señora del Rosario fue punto central de la vida parroquial. En 1774 se solicitó la creación de la parroquia, marcando el inicio de su identidad religiosa y administrativa.</p>
-            </div>
-
-            <!-- Nacimiento -->
-            <div class="timeline-item">
-              <h5>Nacimiento oficial del municipio (siglo XIX)</h5>
-              <p class="muted">El 24 de diciembre de 1831 se erigió la parroquia de Itagüí; el 7 de marzo de 1832 fue reconocido como Distrito Municipal, separándose de Envigado. Itagüí consolidó su autonomía con desarrollo agrícola y comercio de ganado.</p>
-            </div>
-
-            <!-- Agricola artesanal -->
-            <div class="timeline-item">
-              <h5>Itagüí agrícola y artesanal (siglo XIX – comienzo XX)</h5>
-              <p class="muted">Economía centrada en ganadería, cultivo de maíz, fríjol y café. Mercados y ferias de ganado fueron claves para el intercambio con Medellín y municipios vecinos.</p>
-            </div>
-
-            <!-- Industrialización -->
-            <div class="timeline-item">
-              <h5>Industrialización y crecimiento urbano (siglo XX)</h5>
-              <p class="muted">Se instaló industria (Curtimbres Independencia 1927, talleres de confección, fábricas de calzado y textiles). Nació la Vía de la Moda, símbolo del espíritu emprendedor del municipio.</p>
-            </div>
-
-            <!-- Identidad -->
-            <div class="timeline-item">
-              <h5>Identidad cultural y símbolos</h5>
-              <p class="muted">Se crearon espacios como el Museo de Arte de Itagüí (MAI) y el Parque del Artista. Símbolos: bandera (progreso, cultura, esperanza), escudo (montañas, petroglifos y engranajes), himno que exalta trabajo y alegría.</p>
-            </div>
-
-            <!-- Modernidad -->
-            <div class="timeline-item">
-              <h5>Itagüí moderno</h5>
-              <p class="muted">Hoy Itagüí es uno de los municipios más pujantes de Colombia, con más de 300.000 habitantes en 21 km², combinando industria, comercio, turismo y cultura. Lugares emblemáticos: Parque Obrero, Plaza CAMI, Museo de Arte de Itagüí (MAI), Unidad Deportiva Ditaires, Parque del Artista.</p>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="card p-3 mb-3">
-            <h6>Imágenes sugeridas</h6>
-            <p class="muted small">Petroglifos · Iglesia Nuestra Señora del Rosario · Antiguas fábricas · Escudo y bandera · Parque Obrero</p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Iglesia_Nuestra_Se%C3%B1ora_del_Rosario_Itagu%C3%AD.jpg" alt="Iglesia Itagüí" class="img-fluid rounded mt-2">
-          </div>
-
-          <div class="card p-3">
-            <h6>Datos rápidos</h6>
-            <ul class="muted small mb-0">
-              <li>Superficie: ≈ 21 km²</li>
-              <li>Población: +300.000 habitantes</li>
-              <li>Lugares: Parque Obrero, MAI, Vía de la Moda</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
