@@ -9,7 +9,7 @@ body {
   background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
     url('https://upload.wikimedia.org/wikipedia/commons/9/99/Itagui_Parque_Principal.jpg') center/cover;
 }
-
+/* Titulo principal */
 .america {
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 3rem;
