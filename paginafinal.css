@@ -1,0 +1,49 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 80px;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://upload.wikimedia.org/wikipedia/commons/9/99/Itagui_Parque_Principal.jpg') center/cover;
+}
+/* Titulo principal */
+.america {
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+/* logo */
+.superjoyful {
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #ffa500 !important;
+}
+
+.section-top {
+  padding-top: 100px;
+}
+
+.btn-warning {
+  background-color: #ffa500;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #ff7b00;
+}
+
+.container img{
+
+    margin-right: 20px;
+
+}
+
+
+.container1:hover{
+    transform: scale(1.06);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
