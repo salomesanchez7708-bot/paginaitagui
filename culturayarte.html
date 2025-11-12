@@ -3,30 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>cultura y arte</title>
+  <title>Cultura y Arte</title>
 
   <!-- Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <style>
     body {
-     font-family: 'Roboto', sans-serif;
+      font-family: 'Roboto', sans-serif;
       background-color: #fafafa;
       color: #1d1d1d;
     }
 
-    .navbar {
-      background-color: #fff;
-    }
-
     .navbar-brand {
       font-weight: 700;
-      color: #ffa500 ;
+      color: #ffa500;
       font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    }
-
-    .navbar-brand span {
-      color: #6a00ff;
     }
 
     h2, h4 {
@@ -34,7 +26,7 @@
     }
 
     .section {
-      padding: 180px 0;
+      padding: 120px 0;
     }
 
     .title-section {
@@ -43,28 +35,41 @@
     }
 
     .icon-box {
-      background-color: #d9d9d9;
+      background-color: #fff;
       border-radius: 20px;
-      padding: 40px 30px;
-      text-align: center;
-      transition: all 0.3s ease;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
       height: 100%;
     }
 
     .icon-box:hover {
       transform: translateY(-5px);
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     }
 
     .icon-box img {
-      width: 80px;
-      margin-bottom: 20px;
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
     }
 
-    .number {
-      font-size: 2rem;
-      font-weight: 700;
-      color: #6a00ff;
+    .icon-box-content {
+      padding: 25px;
+      text-align: center;
+    }
+
+    .btn-custom {
+      background-color: #ffa500;
+      color: white;
+      border-radius: 30px;
+      padding: 8px 20px;
+      border: none;
+      transition: 0.3s;
+    }
+
+    .btn-custom:hover {
+      background-color: #ff8c00;
+      transform: scale(1.05);
     }
 
     footer {
@@ -74,28 +79,73 @@
       padding: 25px 0;
       margin-top: 60px;
     }
+
+    /* Hero Image */
+    .hero {
+      width: 100%;
+      height: 400px;
+      background-image: url('/paginaitagui/arte-cultura-banner.jpg'); /* Cambia por tu imagen */
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      margin-bottom: 50px;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.4);
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      text-align: center;
+      z-index: 1;
+    }
+
+    .hero-text h1 {
+      font-size: 3rem;
+      font-weight: 700;
+    }
   </style>
 </head>
 
 <body>
-    <!-- enlaces NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
-        <div class="container">
-            <a class="navbar-brand superjoyful" href="paginafinal.html" style="display: flex; gap: 1rem; align-items: center;"> <img src="logo.svg" alt="logo">Caminos por
-                descubrir</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="menu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a href="paginafinal.html" class="nav-link active">Inicio</a></li>
-                    <li class="nav-item"><a href="conoce.html" class="nav-link">Conoce</a></li>
-                    <li class="nav-item"><a href="historia.html" class="nav-link">Historia</a></li>
-                    <li class="nav-item"><a href="redes.html" class="nav-link">Redes</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand superjoyful" href="paginafinal.html" style="display: flex; gap: 1rem; align-items: center;">
+        <img src="logo.svg" alt="logo">Caminos por descubrir
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="paginafinal.html" class="nav-link active">Inicio</a></li>
+          <li class="nav-item"><a href="conoce.html" class="nav-link">Conoce</a></li>
+          <li class="nav-item"><a href="historia.html" class="nav-link">Historia</a></li>
+          <li class="nav-item"><a href="redes.html" class="nav-link">Redes</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Descubre la Cultura y el Arte de Itagüí</h1>
+      <p>Una ciudad llena de creatividad, historia y expresión</p>
+    </div>
+  </div>
 
   <!-- SECCIÓN PRINCIPAL -->
   <section class="section">
@@ -105,39 +155,61 @@
       </div>
 
       <!-- Fila 1 -->
-      <div class="row g-4 align-items-stretch">
+      <div class="row g-4">
         <div class="col-md-6">
           <div class="icon-box">
-            <img src="/edificio-de-oficinas.png" alt="API">
-            <h4>Centro cultural Caribe</h4>
-            <p>En dichos establecimientos pueden realizarse ensayos, seminarios, charlas, talleres, clases y/o cualquier actividad de carácter formativa relacionada con todas las manifestaciones tangibles e intangibles del arte y la cultura.</p>
+            <img src="/paginaitagui/edificio-de-oficinas.png" alt="Centro cultural">
+            <div class="icon-box-content">
+              <h4>Centro cultural Caribe</h4>
+              <p>En dichos establecimientos pueden realizarse ensayos, seminarios, charlas, talleres, clases y/o cualquier actividad formativa relacionada con el arte y la cultura.</p>
+              <a href="#" class="btn btn-custom">Ver más</a>
+              <a href="https://www.google.com/maps/place/Centro+Cultural+Caribe/" target="_blank" class="btn btn-link">
+                <img src="/paginaitagui/mapa.png" alt="Mapa" style="width: 30px;">
+              </a>
+            </div>
           </div>
         </div>
 
         <div class="col-md-6">
           <div class="icon-box">
-            <img src="/parque-natural.png" alt="parque">
-            <h4>Parque  Artista</h4>
-            <p>Es un parque emblemático en el centro de Itagüí, con una escultura del maestro Salvador Arango llamada "Reto"</p>
+            <img src="/paginaitagui/parque-natural.png" alt="Parque artista">
+            <div class="icon-box-content">
+              <h4>Parque Artista</h4>
+              <p>Es un parque emblemático en el centro de Itagüí, con una escultura del maestro Salvador Arango llamada "Reto".</p>
+              <a href="https://www.google.com/maps/place/Parque+del+Artista/" target="_blank" class="btn btn-link">
+                <img src="/paginaitagui/mapa.png" alt="Mapa" style="width: 30px;">
+              </a>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Fila 2 -->
-      <div class="row g-4 align-items-stretch mt-4">
+      <div class="row g-4 mt-4">
         <div class="col-md-6">
           <div class="icon-box">
-            <img src="/templo-griego.png" alt="museo">
-            <h4>Museo comunitario</h4>
-            <p>Este museo comunitario se centra en patrimonio, cultura , memoria local y arqueologí. Ofrece talleres para niños y jóvenes.</p>
+            <img src="/paginaitagui/templo-griego.png" alt="Museo comunitario">
+            <div class="icon-box-content">
+              <h4>Museo comunitario</h4>
+              <p>Este museo se centra en patrimonio, cultura, memoria local y arqueología. Ofrece talleres para niños y jóvenes.</p>
+              <a href="#" class="btn btn-custom">Explorar</a>
+              <a href="https://www.google.com/maps/place/Museo+Graciliano+Arcila+Vélez/" target="_blank" class="btn btn-link">
+                <img src="/paginaitagui/mapa.png" alt="Mapa" style="width: 30px;">
+              </a>
+            </div>
           </div>
         </div>
 
         <div class="col-md-6">
           <div class="icon-box">
-            <img src="/escenario.png" alt="escenario">
-            <h4>Teatro Norte </h4>
-            <p>Un teatro-auditorio en Itagüí que desde hace años acoge funciones de teatro, danza, musica, y forma parte del evento Festival de teatro Ciudad de Itagüí.</p>
+            <img src="/paginaitagui/escenario.png" alt="Teatro Norte">
+            <div class="icon-box-content">
+              <h4>Teatro Norte</h4>
+              <p>Un teatro-auditorio en Itagüí que desde hace años acoge funciones de teatro, danza y música, y forma parte del Festival de Teatro Ciudad de Itagüí.</p>
+              <a href="https://www.google.com/maps/place/Auditorio+Cultural+del+Norte/" target="_blank" class="btn btn-link">
+                <img src="/paginaitagui/mapa.png" alt="Mapa" style="width: 30px;">
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -146,10 +218,16 @@
 
   <!-- FOOTER -->
   <footer>
-   <p>© <span id="year"></span> Conoce Itagüí</p>
+    <p>© <span id="year"></span> Conoce Itagüí</p>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
+

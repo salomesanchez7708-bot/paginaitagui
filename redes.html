@@ -8,19 +8,22 @@
   <link rel="stylesheet" href="paginafinal.css">
 </head>
 <body>
+
   <!-- NAVBAR -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
     <div class="container">
-      <a class="navbar-brand superjoyful" href="paginafinal.html"> <img src="logo.svg" alt="logo" >Caminos por descubrir</a>
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <a class="navbar-brand superjoyful d-flex align-items-center gap-3" href="paginafinal.html">
+        <img src="logo.svg" alt="logo"> Caminos por descubrir
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="menu">
         <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a href="paginafinal.html" class="nav-link">Inicio</a></li>
+          <li class="nav-item"><a href="paginafinal.html" class="nav-link active">Inicio</a></li>
           <li class="nav-item"><a href="conoce.html" class="nav-link">Conoce</a></li>
           <li class="nav-item"><a href="historia.html" class="nav-link">Historia</a></li>
-          <li class="nav-item"><a href="redes.html" class="nav-link active">Redes</a></li>
+          <li class="nav-item"><a href="redes.html" class="nav-link">Redes</a></li>
         </ul>
       </div>
     </div>
@@ -29,20 +32,65 @@
   <!-- EQUIPO -->
   <section class="section-top py-5 mt-5">
     <div class="container text-center">
-      <h2 class="mb-4">Nuestro equipo</h2>
-      <div class="row g-4">
-        <div class="col-md-4"><div class="card p-3"><h5>Martha Martínez</h5><p>Tecnóloga en Producción Multimedia.</p></div></div>
-        <div class="col-md-4"><div class="card p-3"><h5>Dayana González</h5><p>Amante del arte y la moda.</p></div></div>
-        <div class="col-md-4"><div class="card p-3"><h5>Salomé Sánchez</h5><p>Creativa apasionada por el diseño.</p></div></div>
+      <h2 class="mb-5"><strong>Nuestro Equipo</strong></h2>
+      <div class="row g-4 justify-content-center">
+        
+        <!-- integrante #1 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card p-3 shadow-sm h-100">
+            <img src="yoooooo.webp" alt="Martha Martínez" class="card-img-top rounded-circle mx-auto" style="width: 150px; height: 150px; object-fit: cover;">
+            <div class="card-body">
+              <h3><strong>Martha Martínez</strong></h3>
+              <p class="card-text">Le gusta pasar tiempo en familia y escuchar música.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- integrante #2 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card p-3 shadow-sm h-100">
+            <img src="yeruin.jpg" alt="Dayana González" class="card-img-top rounded-circle mx-auto" style="width: 150px; height: 150px; object-fit: cover;">
+            <div class="card-body">
+              <h3><strong>Dayana González</strong></h3>
+              <p class="card-text">Amante del arte y la moda.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- integrante #3 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="card p-3 shadow-sm h-100">
+            <img src="salo.jpg" alt="Salomé Sánchez" class="card-img-top rounded-circle mx-auto" style="width: 150px; height: 150px; object-fit: cover;">
+            <div class="card-body">
+              <h3><strong>Salomé Sánchez</strong></h3>
+              <p class="card-text">Creativa apasionada por el diseño.</p>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div>
+
+      <!-- 🎥 VIDEO CENTRADO -->
+      <div class="mt-5">
+        <h2 class="mb-4 text-warning">Conoce más sobre nuestro proyecto</h2>
+
+        <!-- Opción 1: Video de YouTube -->
+        <div class="ratio ratio-16x9 mx-auto" style="max-width: 800px;">
+          <iframe src="https://www.youtube.com/embed/VIDEO_ID" 
+                  title="Video de presentación"
+                  allowfullscreen></iframe>
+        </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="bg-dark text-white text-center p-3">
     <p>© <span id="year"></span> Conoce Itagüí</p>
   </footer>
 
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/main.js"></script>
 </body>
 </html>
+
