@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La gran manzana</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="paginafinal.css">
+
+  <style>
+    /* logo */
+.superjoyful {
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #ffa500 !important;
+}
+    body {
+      background-color: #000;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+    }
+    .navbar {
+      background-color: #000;
+    }
+    .navbar-brand {
+      color: #ffa500 !important;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+
+.img-fluid { 
+    margin-top: 70px;
+
+}
+
+    .btn-outline-light {
+      border-color: white;
+      color: white;
+    }
+    .btn-outline-light:hover {
+      background-color: white;
+      color: black;
+    }
+    .highlight {
+    margin-top: 30px;
+      color: #ffa500;
+      font-weight: bold;
+    }
+    hr {
+      border: 1px solid #ffa500;
+      opacity: 1;
+      width: 80px;
+      margin: 10px 0;
+    }
+
+    footer {
+      background-color: #d9d9d9;
+      color: #000000;
+      text-align: center;
+      padding: 25px 0;
+      margin-top: 150px;
+    }
+
+ /* banner */
+    .social-banner {
+      background-color: #111;
+      padding: 1px ;
+      text-align: center;
+      margin-top: 25px;
+    }
+
+    .social-banner h3 {
+      color: #ffa500;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 12px;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+
+    .social-icons a:hover {
+      transform: scale(1.15);
+    }
+
+    .social-icons img {
+      width: 50px;
+      filter: drop-shadow(0 0 5px #ffa500);
+    }
+    /* fin banner */
+  </style>
+</head>
+<body>
+
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+      <a class="navbar-brand superjoyful" href="paginafinal.html">
+        <img src="logo.svg" alt="logo"> Caminos por descubrir
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a href="paginafinal.html" class="nav-link active">Inicio</a></li>
+          <li class="nav-item"><a href="conoce.html" class="nav-link">Conoce</a></li>
+          <li class="nav-item"><a href="historia.html" class="nav-link">Historia</a></li>
+          <li class="nav-item"><a href="redes.html" class="nav-link">Redes</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección principal -->
+  <div class="container py-5">
+    <div class="row align-items-center">
+
+    <!-- boton atras -->
+    <a href="/paginaitagui/turismoempresarial.html" style="padding-left: 8px; margin-top: 30px;">
+      <img src="/paginaitagui/flecha-izquierda.png" alt="Botón" style="width:60px; cursor:pointer;">
+    </a>
+
+      <!-- Texto -->
+      <div class="col-md-6">
+        <h2 class="highlight">Conoce más sobre</h2>
+        <h1 class="fw-bold mb-4">La gran manzana</h1>
+
+        <div class="row">
+          <div class="col-md-6 mb-4">
+
+            <h5>Datos basicos</h5>
+            <hr>
+            <p>En este “distrito” se priorizan actividades como confección, diseño de moda, publicidad, turismo, entre otras, para fortalecer la industria creativa local.</p>
+            <p>Según el plan territorial del municipio, el “Distrito Moda” está ubicado sobre la Avenida Santa María y abarca aproximadamente 24,9 hectáreas.</p>
+          
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <h5>Principales espacios comerciales</h5>
+            <hr>
+            <p>Super Centro de la Moda: Es un gran complejo industrial y comercial de ropa, con más de 100 locales y múltiples fábricas.</p>
+            <p>Centro Comercial Moda Rosa: Otro punto clave en la comercialización de prendas, especialmente femenino.</p>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <h5>Importancia económica y social</h5>
+            <hr>
+            <p>Este modelo apoya la competitividad del municipio como un nodo importante de la industria textil en la región.</p>
+            <p>Este distrito moda busca generar empleo, innovación y emprendimiento en el municipio, vinculando a diseñadores, confeccionistas y jóvenes emprendedores.</p>
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <h5>Ubicación y accesibilidad</h5>
+            <hr>
+            <p>Según el Plan Especial de Itagüí, este sector no solo es comercial, también es un “pasaje cultural”: no solo se vende ropa, sino que también hay actividades vinculadas a la comunidad, al diseño y al arte.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagen -->
+      <div class="col-md-6 text-center">
+        <img src="/paginaitagui/granmanzana.png" style="display: block; margin-left: 60px;" alt="lugar" class="img-fluid rounded-3 shadow">
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <p>© <span id="year"></span> Conoce Itagüí</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <!-- banner redes -->
+  <section class="social-banner">
+    <div class="social-icons">
+
+      <a href="https://www.instagram.com/caminos_pordescubrir_12?igsh=bzQ5djJyNWZwcDd5" target="_blank">
+        <img src="/paginaitagui/instagram.png" alt="Instagram">
+      </a>
+
+      <a href="https://www.facebook.com/profile.php?id=61584113513019" target="_blank">
+        <img src="/paginaitagui/facebook.png" alt="Facebook">
+      </a>
+
+      <a href="https://www.tiktok.com/@itag443?_r=1&_t=ZS-91V975lVoZx" target="_blank">
+        <img src="/paginaitagui/tik-tok .png" alt="TikTok">
+      </a>
+
+    </div>
+  </section>
+  <!-- fin banner -->
+</body>
+</html>

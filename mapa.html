@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Mapa</title>
+
+    <!-- Leaflet CSS -->
+    <link
+        rel="stylesheet"
+        href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <style>
+        /* Ocupa toda la página sin scroll extra */
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+        /* El div del mapa ocupa todo el espacio disponible */
+        #map {
+            height: 100%;
+            width: 100%;
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script>
+        // Inicializa el mapa centrado (lat, lon) y con zoom
+        const map = L.map('map').setView([6.1726, -75.6096], 15);
+
+        // Capa de teselas (OpenStreetMap)
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Marcador de ejemplo con popup
+        L.marker([6.172870, -75.607351]).addTo(map)
+            .bindPopup('Centro cultural Caribe')
+            .openPopup();
+
+        // Marcador de ejemplo con popup
+        L.marker([6.177881, -75.602786]).addTo(map)
+            .bindPopup('Parque del artista')
+            .openPopup();
+
+            // Marcador de ejemplo con popup
+        L.marker([6.176022, -75.613908]).addTo(map)
+            .bindPopup('Museo Comunitario')
+            .openPopup();
+
+            // Marcador de ejemplo con popup
+        L.marker([6.184629, -75.593445]).addTo(map)
+            .bindPopup('Sede norte')
+            .openPopup();
+
+            // Marcador de ejemplo con popup
+        L.marker([6.188133, -75.596772]).addTo(map)
+            .bindPopup('Centro Internacional de la moda')
+            .openPopup();
+
+            // Marcador de ejemplo con popup
+        L.marker([6.189285, -75.589760]).addTo(map)
+            .bindPopup('Central Mayorista')
+            .openPopup();
+
+            // Marcador de ejemplo con popup
+        L.marker([6.173131, -75.608937]).addTo(map)
+            .bindPopup('Fiesta de la industria')
+            .openPopup();
+
+            // Marcador de ejemplo con popup
+        L.marker([6.174523, -75.608094]).addTo(map)
+            .bindPopup('Centro comercial plaza')
+            .openPopup();
+
+            // Marcador de ejemplo con popup
+        L.marker([6.170979, -75.611400]).addTo(map)
+            .bindPopup('Centro de convenciones')
+            .openPopup();
+
+            // Marcador de ejemplo con popup
+        L.marker([6.188529, -75.596243]).addTo(map)
+            .bindPopup('Centro comercial la torre')
+            .openPopup();
+
+                   // Marcador de ejemplo con popup
+        L.marker([6.188529, -75.596243]).addTo(map)
+            .bindPopup('Centro comercial la torre')
+            .openPopup();
+
+        // Marcador de ejemplo con popup
+        L.marker([6.182429, -75.590371]).addTo(map)
+            .bindPopup('Bodegas ideo')
+            .openPopup();
+
+         // Marcador de ejemplo con popup
+        L.marker([6.171255, -75.608497]).addTo(map)
+            .bindPopup('Gran manzana')
+            .openPopup();
+        // Añade control de escala
+        L.control.scale().addTo(map);
+    </script>
+</body>
+</html>

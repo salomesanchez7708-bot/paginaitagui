@@ -1,0 +1,194 @@
+@media (min-width: 768px) {
+
+    body {
+        background-size: cover;
+        background-color: #ffffff;
+        background-image: url("assets/endless-constellation.svg");
+        background-position: center;
+    }
+
+    h1 {
+        font-family: 'Poppins', serif;
+    }
+
+    h2 {
+        text-align: center;
+        color: rgb(27, 0, 46);
+        font-family: 'Yeseva One', serif;
+        font-size: 300%;
+    }
+
+    p {
+        text-align: center;
+        color: rgb(27, 0, 46);
+        font-family: 'Poppins', sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    #fotoperfil {
+        align-items: center !important;
+    }
+
+
+
+    #detalles {
+        font-family: 'Public Sans', sans-serif;
+        font-size: 12px;
+    }
+
+    #restaurarcotraseña {
+        font-family: 'Public Sans', sans-serif;
+    }
+
+    body {
+        background-color: #fff;
+    }
+
+
+    .contenido {
+        padding-top: 48px;
+        padding-bottom: 80px;
+        margin-top: 150px;
+    }
+
+    .rosca {
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+    }
+
+    .rosca:hover {
+        transform: scale(1.05);
+    }
+
+
+    .tarjeta {
+        background-color: #f8f9fa;
+        border-radius: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+        min-width: 320px;
+        max-width: 420px;
+    }
+
+    .mi-header {
+        background-color: rgb(255, 240, 173);
+        height: 80px;
+        padding-left: 40px;
+        padding-right: 40px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .mi-header .buscador {
+        width: 250px;
+        margin-left: 1050px;
+    }
+
+    .mi-header img {
+        cursor: pointer;
+    }
+
+    .iconos {
+        margin-left: 500px;
+        display: flex;
+        gap: 13px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        background-size: cover;
+        background-color: #ffffff;
+        background-image: url("assets/endless-constellation.svg");
+        background-position: center;
+    }
+
+    h2 {
+        text-align: center;
+        color: rgb(27, 0, 46);
+        font-family: 'Yeseva One', serif;
+        font-size: 200%;
+    }
+
+    p {
+        text-align: center;
+        color: rgb(27, 0, 46);
+        font-family: 'Poppins', sans-serif;
+        font-size: 10px;
+        font-weight: 300;
+    }
+
+
+    #detalles {
+        font-family: 'Public Sans', sans-serif;
+        font-size: 9px;
+    }
+
+    #boton-iniciar {
+        font-size: 13px !important;
+    }
+
+    #fotoperfil {
+        align-items: center !important;
+        height: 200px !important;
+    }
+
+    body {
+        background-color: #fff;
+    }
+
+
+    .contenido {
+        padding-top: 48px;
+        padding-bottom: 80px;
+        margin-top: 150px;
+    }
+
+    .rosca {
+        width: 300px;
+        height: 300px;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+    }
+
+    .rosca:hover {
+        transform: scale(1.05);
+    }
+
+
+    .tarjeta {
+        background-color: #f8f9fa;
+        border-radius: 1rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem;
+        min-width: 320px;
+        max-width: 420px;
+    }
+
+    .mi-header {
+        background-color: rgb(255, 240, 173);
+        height: 80px;
+        padding-left: 40px;
+        padding-right: 40px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .mi-header .buscador {
+        width: 250px;
+        margin-left: 1050px;
+    }
+
+    .mi-header img {
+        cursor: pointer;
+    }
+
+    .iconos {
+        margin-left: 500px;
+        display: flex;
+        gap: 13px;
+    }
+}
