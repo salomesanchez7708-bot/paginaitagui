@@ -20,10 +20,6 @@ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida San
 font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   color: #ffa500 !important;
 }
-.text-warning{
-  color: #000000;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
 
 .section-top {
   padding-top: 100px;
@@ -51,50 +47,3 @@ font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
 }
-           /* banner */
-    .social-banner {
-      background-color: #ffffff;
-      padding: 1px ;
-      text-align: center;
-      margin-top: 25px;
-    }
-    .social-banner h3 {
-      color: #ffa500;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-
-    .social-icons a {
-      display: inline-block;
-      margin: 0 12px;
-      text-decoration: none;
-      transition: transform 0.2s ease;
-    }
-   .social-icons a:hover {
-      transform: scale(1.15);
-    }
-
-    .social-icons img {
-      width: 50px;
-      filter: drop-shadow(0 0 5px #ffa500);
-    }
-        .social-banner {
-      background-color: #ffffff;
-      padding: 1px ;
-      text-align: center;
-      margin-top: 25px;
-    }
-        .social-banner {
-      background-color: #ffffff;
-      padding: 1px ;
-      text-align: center;
-      margin-top: 25px;
-    }
-       .social-banner1 {
-      background-color: #000000;
-      padding: 1px ;
-      text-align: center;
-      margin-top: 25px;
-    }
-    /* fin banner */
-  

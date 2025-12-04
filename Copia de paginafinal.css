@@ -1,0 +1,100 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 80px;
+  scroll-behavior: smooth;
+}
+
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url('https://upload.wikimedia.org/wikipedia/commons/9/99/Itagui_Parque_Principal.jpg') center/cover;
+}
+/* Titulo principal */
+.america {
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+/* logo */
+.superjoyful {
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: #ffa500 !important;
+}
+.text-warning{
+  color: #000000;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.section-top {
+  padding-top: 100px;
+}
+
+.btn-warning {
+  background-color: #ffa500;
+  border: none;
+}
+
+.btn-warning:hover {
+  background-color: #ff7b00;
+}
+
+.container img{
+
+    margin-right: 20px;
+
+}
+
+
+.container1:hover{
+    transform: scale(1.06);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+           /* banner */
+    .social-banner {
+      background-color: #ffffff;
+      padding: 1px ;
+      text-align: center;
+      margin-top: 25px;
+    }
+    .social-banner h3 {
+      color: #ffa500;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    .social-icons a {
+      display: inline-block;
+      margin: 0 12px;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+   .social-icons a:hover {
+      transform: scale(1.15);
+    }
+
+    .social-icons img {
+      width: 50px;
+      filter: drop-shadow(0 0 5px #ffa500);
+    }
+        .social-banner {
+      background-color: #ffffff;
+      padding: 1px ;
+      text-align: center;
+      margin-top: 25px;
+    }
+        .social-banner {
+      background-color: #ffffff;
+      padding: 1px ;
+      text-align: center;
+      margin-top: 25px;
+    }
+       .social-banner1 {
+      background-color: #000000;
+      padding: 1px ;
+      text-align: center;
+      margin-top: 25px;
+    }
+    /* fin banner */
+  
